@@ -1,0 +1,31 @@
+@use '../tokens' as *;
+@use '../variables' as *;
+
+:root {
+  @include set-color($brand-tokens);
+  @include set-color($color-tokens);
+  @include set-spacing($spacing-tokens);
+  @include set-border($border-tokens);
+}
+
+html {
+  background-color: var(--color-white);
+}
+
+.page {
+  --page-bg: var(--color-bg-light);
+  --page-text: var(--color-black);
+  --page-gutter: var(--spacing-3);
+  --page-max-width: 1280px;
+
+  --section-padding-x: var(--page-gutter);
+  --section-padding-y: var(--spacing-10);
+  --section-padding: var(--section-padding-y) var(--section-padding-x);
+  --section-offset: calc(var(--section-padding-y) * 5);
+
+  background-color: var(--page-bg);
+  color: var(--page-text);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}

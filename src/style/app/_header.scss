@@ -1,0 +1,33 @@
+.header {
+  --header-bg: var(--color-base);
+  --header-text: var(--color-light);
+  --header-padding: var(--spacing-4) var(--page-gutter);
+  --header-logo-color: var(--color-light);
+  --menu-button-bg: var(--color-light);
+
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: var(--header-padding);
+  padding-top: var(--spacing-3);
+}
+
+.header__container {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  color: var(--header-logo-color);
+  font-weight: 900;
+  margin-top: var(--spacing-3);
+  font-size: 1.5rem;
+}
+
+.header__menu-button {
+  color: var(--menu-button-bg);
+  font-size: 3rem;
+}

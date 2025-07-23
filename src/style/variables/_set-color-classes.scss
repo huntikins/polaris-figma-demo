@@ -1,0 +1,20 @@
+@use "sass:color";
+@use "./../default/color" as colors;
+
+@mixin set-color-classes($tokens: colors.$default-color-tokens) {
+  @each $color-role, $variants in $tokens {
+    @each $variant, $color in $variants {
+      .color--#{$color-role}-#{$variant} {
+        color: var(--color-#{$color-role}-#{$variant});
+      }
+
+      .bg-color--#{$color-role}-#{$variant} {
+        background-color: var(--color-#{$color-role}-#{$variant});
+      }
+
+      .border-color--#{$color-role}-#{$variant} {
+        border-color: var(--color-#{$color-role}-#{$variant});
+      }
+    }
+  }
+}

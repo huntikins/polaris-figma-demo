@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+$border-tokens: (
+    theme: (
+      color-brand: $brand-border-primary,
+      radius-square: 0px,
+      radius-container: $border-radius-m,
+      radius-button: $border-radius-l,
+      radius-circle: 100px,
+      radius-xs: 4px,
+      radius-s: 8px,
+      radius-m: 16px,
+      radius-l: 48px,
+      radius-xl: 64px
+    )
+);

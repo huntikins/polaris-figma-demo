@@ -1,0 +1,9 @@
+@use "./../default/line-height" as line-height;
+
+@mixin set-line-height($tokens: line-height.$default-line-height) {
+  @each $height-role, $variants in $tokens {
+    @each $variant, $value in $variants {
+      --line-height-#{$height-role}-#{$variant}: #{$value};
+    }
+  }
+}

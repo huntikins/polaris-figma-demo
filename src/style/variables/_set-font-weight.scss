@@ -1,0 +1,9 @@
+@use "./../default/font-weight" as font-weight;
+
+@mixin set-font-weight($tokens: font-weight.$default-font-weight) {
+  @each $weight-role, $variants in $tokens {
+    @each $variant, $value in $variants {
+      --font-weight-#{$weight-role}-#{$variant}: #{$value};
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  --footer-bg: var(--color-base);
+  --footer-text: var(--color-light);
+  --footer-padding: var(--section-padding);
+  --footer-logo-color: var(--color-light);
+  --footer-logo-padding: var(--spacing-3);
+  --footer-text-spacing: var(--spacing-6);
+
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  padding: var(--footer-padding);
+  padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
+}
+
+.footer__container {
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+}
+
+.footer__logo {
+  color: var(--footer-logo-color);
+  padding-bottom: var(--footer-logo-padding);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.footer__text {
+  margin-bottom: var(--footer-text-spacing);
+}
+
+.footer__copyright {
+  font-size: 1.15rem;
+  text-align: center;
+  font-weight: 900;
+}

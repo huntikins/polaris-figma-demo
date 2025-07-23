@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+$color-tokens: (
+    color: (
+      primary-5: $blue-50,
+      primary-10: $blue-100,
+      primary-20: $blue-200,
+      primary-30: $blue-300,
+      primary-40: $blue-400,
+      primary-50: $blue-500,
+      primary-60: $blue-600,
+      primary-70: $blue-700,
+      primary-80: $blue-800,
+      primary-90: $blue-900,
+      primary-95: $blue-950,
+      grayscale-0: $gray-0,
+      grayscale-10: $gray-100,
+      grayscale-20: $gray-200,
+      grayscale-30: $gray-300,
+      grayscale-40: $gray-400,
+      grayscale-50: $gray-500,
+      grayscale-60: $gray-600,
+      grayscale-70: $gray-700,
+      grayscale-80: $gray-800,
+      grayscale-90: $gray-900,
+      grayscale-95: $gray-950,
+      grayscale-100: $gray-1000
+    )
+);

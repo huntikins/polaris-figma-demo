@@ -1,0 +1,25 @@
+@use "./../default/breakpoints" as breakpoints;
+@use "./../default/spacing-format" as spacing-format;
+
+@mixin set-spacing-mixins($spacing-classes) {
+  @each $breakpoint-role, $breakpoint-value in breakpoints.$breakpoints {
+    @media (min-width: $breakpoint-value) {
+      @each $spacing-variable, $value in $spacing-classes {
+        @each $spacing-identifier, $variants in spacing-format.$spacing-format {
+          .#{$breakpoint-role}\:p#{$spacing-identifier}-#{$spacing-variable} {
+            @each $variant in $variants {
+              padding#{$variant}: var(--spacing-#{$spacing-variable});
+            }
+          }
+        }
+        @each $spacing-identifier, $variants in spacing-format.$spacing-format {
+          .#{$breakpoint-role}\:m#{$spacing-identifier}-#{$spacing-variable} {
+            @each $variant in $variants {
+              margin#{$variant}: var(--spacing-#{$spacing-variable});
+            }
+          }
+        }
+      }
+    }
+  }
+}

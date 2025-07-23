@@ -1,0 +1,9 @@
+@use "./../default/spacing" as spacing;
+
+@mixin set-spacing($tokens: spacing.$default-spacing) {
+  @each $theme, $variants in $tokens {
+    @each $variant, $value in $variants {
+    --spacing-#{$variant}: #{$value};
+  }
+  }
+}

@@ -1,0 +1,63 @@
+.hero {
+  --hero-bg: var(--color-bg-primary);
+  --hero-padding: var(--section-padding);
+  --hero-title-color: var(--color-font-heading);
+  --hero-title-spacing: var(--spacing-4);
+  --hero-description-color: var(--color-black);
+  --hero-description-spacing: var(--spacing-5);
+  --hero-button-padding: var(--spacing-2) var(--spacing-3);
+  --hero-button-border: 2px solid;
+  --hero-button-border-radius: var(--border-radius-button);
+  --hero-button-primary-bg: var(--color-bg-dark);
+  --hero-button-primary-text: var(--color-light);
+  --hero-button-secondary-bg: var(--color-light);
+  --hero-button-secondary-text: var(--color-bg-dark);
+
+  background-color: var(--hero-bg);
+  padding: var(--hero-padding);
+  text-align: center;
+  padding-top: calc(var(--section-offset) / 4);
+  padding-bottom: var(--section-offset);
+}
+
+.hero__title {
+  color: var(--hero-title-color);
+  font-size: 96px;
+  margin-bottom: var(--hero-title-spacing);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hero__description {
+  color: var(--hero-description-color);
+  font-size: 1.25rem;
+  max-width: var(--page-max-width);
+  padding: 0 var(--page-gutter);
+  margin: 0 auto var(--hero-description-spacing);
+}
+
+.hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero__button {
+  padding: var(--hero-button-padding);
+  border: var(--hero-button-border);
+  font-weight: 600;
+  border-radius: var(--hero-button-border-radius);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.hero__button--primary {
+  background-color: var(--hero-button-primary-bg);
+  color: var(--hero-button-primary-text);
+  border-color: var(--hero-button-primary-bg);
+}
+
+.hero__button--secondary {
+  background-color: var(--hero-button-secondary-bg);
+  color: var(--hero-button-secondary-text);
+}

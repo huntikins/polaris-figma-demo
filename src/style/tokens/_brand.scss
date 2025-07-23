@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+$brand-tokens: (
+    theme: (
+      base: $color-primary-60,
+      border-primary: $brand-dark,
+      dark: $color-primary-80,
+      light: $color-primary-10,
+      font-heading: $brand-dark,
+      font-base: $brand-black,
+      white: $color-grayscale-0,
+      black: $color-grayscale-100,
+      bg-light: $color-grayscale-0,
+      bg-dark: $brand-dark,
+      bg-primary: $color-primary-20
+    )
+);
