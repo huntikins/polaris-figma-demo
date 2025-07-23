@@ -1,7 +1,4 @@
-@use "sass:color";
-@use "./../default/color" as colors;
-
-@mixin set-color($tokens: colors.$default-color-tokens) {
+@mixin set-color($tokens) {
   @each $color-role, $variants in $tokens {
     @each $variant, $color in $variants {
       --color-#{$variant}: #{$color};

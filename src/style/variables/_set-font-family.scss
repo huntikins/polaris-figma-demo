@@ -1,9 +1,0 @@
-@use "./../default/font-family" as font-family;
-
-@mixin set-font-family($tokens: font-family.$default-font-family) {
-  @each $height-role, $variants in $tokens {
-    @each $variant, $value in $variants {
-      --font-family-#{$height-role}-#{$variant}: "#{$value}";
-    }
-  }
-}

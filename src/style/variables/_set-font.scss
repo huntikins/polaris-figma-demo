@@ -1,9 +1,0 @@
-@use "./../default/font" as font;
-
-@mixin set-font($tokens: font.$default-font-size-tokens) {
-  @each $font-role, $variants in $tokens {
-    @each $variant, $size in $variants {
-        --font-#{$font-role}-#{$variant}: #{$size};
-    }
-  }
-}

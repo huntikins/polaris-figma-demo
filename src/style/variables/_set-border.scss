@@ -1,5 +1,3 @@
-@use "./../default/border-radius" as border-radius;
-
 @mixin set-border($tokens) {
   @each $theme, $variants in $tokens {
       @each $variant, $value in $variants {

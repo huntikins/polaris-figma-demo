@@ -1,9 +1,0 @@
-@use "./../default/sizing" as sizing;
-
-@mixin set-sizing($tokens: sizing.$default-sizing) {
-  @each $sizing-role, $variants in $tokens {
-    @each $variant, $value in $variants {
-      --sizing-#{$sizing-role}-#{$variant}: #{$value};
-    }
-  }
-}
